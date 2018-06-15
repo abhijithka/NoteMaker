@@ -27,15 +27,10 @@ class ViewDoneFragment : Fragment(), TaskStatusChangedListener {
         super.onViewCreated(view, savedInstanceState)
         mainActivity = (activity as MainActivity)
         mainActivity.doneTasksStatusChangedListener = this
-        doneList = getDoneInitialList()
+        doneList = mainActivity.getDoneList()
         doneTasksRecyclerViewAdapter = ViewDoneRecyclerViewAdapter(context, doneList, this)
         doneTasksRecylerView.adapter = doneTasksRecyclerViewAdapter
         doneTasksRecylerView.layoutManager = LinearLayoutManager(activity)
-    }
-
-    fun getDoneInitialList() : List<TodoItem> {
-        val doneList = ArrayList<TodoItem>()
-        return doneList
     }
 
     fun undoTask(index: Int) {

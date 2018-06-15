@@ -54,7 +54,11 @@ class MainActivity : AppCompatActivity() {
 
     fun getTodoList(): ArrayList<TodoItem> {
         val todoList = ArrayList<TodoItem>()
-        todoList.add(TodoItem("Buy something", 1))
         return todoList
+    }
+
+    fun getDoneList() : List<TodoItem> {
+        val doneList = ArrayList<TodoItem>()
+        return doneList
     }
 }
