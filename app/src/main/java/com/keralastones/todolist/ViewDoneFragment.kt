@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.keralastones.todolist.R.id.doneTasksRecylerView
 import kotlinx.android.synthetic.main.fragment_view_done.doneTasksRecylerView
 
 class ViewDoneFragment : Fragment(), TaskStatusChangedListener {

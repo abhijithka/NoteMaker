@@ -61,6 +61,7 @@ class AddTodoFragment : Fragment(), TaskStatusChangedListener {
         categorySelector.adapter = categorySelectorAdapter
     }
 
+    // Todo: Get the categories from database or static file
     private fun getCategoriesMap(): Map<Int, String> {
         val categories = HashMap<Int, String>()
         categories.put(1, "Groceries")

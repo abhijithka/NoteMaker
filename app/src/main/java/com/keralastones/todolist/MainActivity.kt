@@ -52,13 +52,25 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // Todo: Get the stored todo list from db
     fun getTodoList(): ArrayList<TodoItem> {
         val todoList = ArrayList<TodoItem>()
         return todoList
     }
 
+    // Todo: Get the stored done list from db
     fun getDoneList() : List<TodoItem> {
         val doneList = ArrayList<TodoItem>()
         return doneList
+    }
+
+    // Todo: Store the todo list to db before the user exits the app
+    fun storeTodoList() {
+
+    }
+
+    // Todo: Store the done list to db before the user exits the app
+    fun storeDoneList() {
+
     }
 }
